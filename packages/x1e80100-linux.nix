@@ -5,7 +5,7 @@ linuxPackagesFor (buildLinux {
     owner = "jhovold";
     repo = "linux";
     rev = "wip/x1e80100-6.12-rc3";  # The specific branch for Lenovo Yoga Slim 7x
-    hash = "sha256-0cqi0hd1wp4rz1wrh0wc472grb4v462vqkigz6983q88ly7b76wj";  # SHA256 hash you just retrieved
+    hash = "sha256-kpuzjqcI4YGS+S9OvIUhm6z8xCGMA5h5+JlcHhoEETM=";  # SHA256 hash you just retrieved
   };
   version = "6.12.0-rc3";  # Kernel version matching the branch
   defconfig = "johan_defconfig";  # Config specific to your device
