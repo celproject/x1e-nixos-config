@@ -48,7 +48,7 @@ linuxPackagesFor (buildLinux {
     name = "drm_panic_qr_code_patch";
     patch = fetchurl {
       url = "https://patchwork.freedesktop.org/patch/618184/raw/";
-      hash = "sha256-13fv3g7qlxa0xag93mqvj7bqyklx6g0z1x0n7sv76vbc84vipqgd";  # The hash in base32 format
+      hash = "sha256-7eEbN0FsbXO2Phb08MEznU6P15Eb15Ge6kB1is8b240";  # The hash in base32 format
     };
     }
   ];
