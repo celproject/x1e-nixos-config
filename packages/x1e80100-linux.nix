@@ -4,11 +4,11 @@ linuxPackagesFor (buildLinux {
   src = fetchFromGitHub {
     owner = "jhovold";
     repo = "linux";
-    rev = "wip/x1e80100-6.12-rc1";
-    hash = "sha256-PzE3Ittt787Lxl84Btz83AcE/LCN3IONhZKGZG34Qm8=";
+    rev = "wip/x1e80100-6.12-rc3";  # The specific branch for Lenovo Yoga Slim 7x
+    hash = "sha256-0cqi0hd1wp4rz1wrh0wc472grb4v462vqkigz6983q88ly7b76wj";  # SHA256 hash you just retrieved
   };
-  version = "6.12.0-rc1";
-  defconfig = "johan_defconfig";
+  version = "6.12.0-rc3";  # Kernel version matching the branch
+  defconfig = "johan_defconfig";  # Config specific to your device
 
   structuredExtraConfig = with lib.kernel; {
     MAGIC_SYSRQ = yes;
