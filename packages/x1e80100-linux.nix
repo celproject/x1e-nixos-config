@@ -44,5 +44,12 @@ linuxPackagesFor (buildLinux {
         hash = "sha256-tnpo07ZPi/3cdiY9h90rf2UgTjr9ZfR1PYRVVQJ2pUQ=";
       };
     }
+    {
+      name = "drm/panic: Select ZLIB_DEFLATE for DRM_PANIC_SCREEN_QR_CODE";
+      patch = fetchpatch {
+        url = "https://patchwork.freedesktop.org/patch/618184/raw/";
+        hash = "sha256-13fv3g7qlxa0xag93mqvj7bqyklx6g0z1x0n7sv76vbc84vipqgd";  # Your fetched patch hash
+      };
+    }
   ];
 })
