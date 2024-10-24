@@ -44,5 +44,12 @@ linuxPackagesFor (buildLinux {
         hash = "sha256-tnpo07ZPi/3cdiY9h90rf2UgTjr9ZfR1PYRVVQJ2pUQ=";
       };
     }
+    {
+    name = "drm_panic_qr_code_patch";
+    patch = fetchurl {
+      url = "https://patchwork.freedesktop.org/patch/618184/raw/";
+      hash = "sha256-7eEbN0FsbXO2Phb08MEznU6P15Eb15Ge6kB1is8b240";  # The hash in base32 format
+    };
+    }
   ];
 })
